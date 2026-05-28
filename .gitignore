@@ -1,0 +1,158 @@
+# ====================================================================
+# SECRETS — NEVER COMMIT
+# Bot token, admin IDs, router credentials, API keys.
+# Real values live in .env (gitignored). Template is .env.example.
+# ====================================================================
+.env
+.env.*
+!.env.example
+*.env
+
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yaml
+*.key
+*.pem
+*.p12
+*.pfx
+.htpasswd
+auth.json
+
+# ====================================================================
+# PYTHON
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.envrc
+
+# Testing / coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.pyright/
+
+# Linters
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# uv / poetry / pdm
+poetry.lock
+.pdm-python
+.pdm.toml
+__pypackages__/
+
+# ====================================================================
+# BOT RUNTIME STATE
+# Anything the bot writes to disk while running.
+# ====================================================================
+data/
+state/
+storage/
+logs/
+*.log
+*.log.*
+
+# aiogram FSM / persistence
+fsm_storage.*
+*.pickle
+*.pkl
+
+# SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+
+# ====================================================================
+# DOCKER
+# ====================================================================
+.docker/
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# ====================================================================
+# IDE / EDITOR
+# ====================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ====================================================================
+# OS JUNK
+# ====================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ====================================================================
+# AGENT / TOOLING SCRATCH
+# ====================================================================
+.claude/
+.cursor/
+.aider*
